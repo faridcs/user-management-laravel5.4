@@ -1,0 +1,27 @@
+{
+  "name": "user-management-laravel",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "copy-documentation": "cpx \"documentation/**/*.*\" user-management/documentation",
+    "copy-script": "cpx \"**/*\" user-management/script && cpx .env.example  user-management/script/ && cpx artisan user-management/script/  && cpx .env  user-management/script/ && cpx public/.htaccess  user-management/script/public/",
+    "delete": "rimraf user-management",
+    "zip": "bestzip ../versions/user-management.zip user-management/*",
+    "build": "npm run delete && npm run copy-script && npm run copy-documentation && rimraf user-management/script/laravel-installer && rimraf user-management/script/storage/installed && rimraf user-management/script/node_modules && npm run zip"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "devDependencies": {
+    "copy-webpack-plugin": "^4.0.1",
+    "cpx": "^1.5.0",
+    "bestzip": "^1.1.3"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "rimraf": "^2.6.1"
+  }
+}

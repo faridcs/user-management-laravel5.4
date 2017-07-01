@@ -1,0 +1,18 @@
+/* here you can put your own css to customize and override the theme */
+.bg-female {
+    background: deeppink;
+}
+.userList{
+    overflow-y: scroll;
+    max-height: 43.8em;
+    overflow-x: hidden;
+}
+.message-seen{
+    color: #ccc;
+}
+.mt-comments .mt-comment.active {
+    background: #f9f9f9;
+}
+.mt-comments .mt-comment{
+    cursor: pointer;
+}
