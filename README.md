@@ -20,3 +20,10 @@ To install, you must follow steps below:
 4. Run tests:
 
        ./vendor/bin/phpunit
+       
+5. Rename .env.example to .env and edit these lines to:
+
+       DB_HOST=localhost
+       DB_DATABASE=usermanager
+       DB_USERNAME=root
+       DB_PASSWORD=root
